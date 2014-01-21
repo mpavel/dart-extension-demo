@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Getting Started Extension's Popup</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: http://developer.chrome.com/extensions/contentSecurityPolicy.html
+     -->
+  </head>
+  <body>
+  
+  <h1>Kitten Viewer</h1>
+    <p>Lets see some kittens</p>
+    <button id="view-kittens">View Kittens!</button>
+    
+    <div id="sample_container_id">
+      <p id="sample_text_id"></p>
+    </div>
+    
+    <div id="display">
+      <p>Displaying images</p>
+    </div>
+    
+    <script type="application/dart" src="popup.dart"></script>
+    <script src="packages/browser/dart.js"></script>
+    <!--<script src="popup.precompiled.js"></script>-->
+  </body>
+</html>
+
